@@ -1,0 +1,14 @@
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\bin\Debug\netcoreapp2.1\BrewApp.API.deps.json
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\bin\Debug\netcoreapp2.1\BrewApp.API.runtimeconfig.json
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\bin\Debug\netcoreapp2.1\BrewApp.API.runtimeconfig.dev.json
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\bin\Debug\netcoreapp2.1\BrewApp.API.dll
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\bin\Debug\netcoreapp2.1\BrewApp.API.pdb
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\obj\Debug\netcoreapp2.1\BrewApp.API.csprojAssemblyReference.cache
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\obj\Debug\netcoreapp2.1\BrewApp.API.csproj.CoreCompileInputs.cache
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\obj\Debug\netcoreapp2.1\BrewApp.API.RazorAssemblyInfo.cache
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\obj\Debug\netcoreapp2.1\BrewApp.API.RazorAssemblyInfo.cs
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\obj\Debug\netcoreapp2.1\BrewApp.API.AssemblyInfoInputs.cache
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\obj\Debug\netcoreapp2.1\BrewApp.API.AssemblyInfo.cs
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\obj\Debug\netcoreapp2.1\BrewApp.API.RazorTargetAssemblyInfo.cache
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\obj\Debug\netcoreapp2.1\BrewApp.API.dll
+C:\Users\650028\Desktop\BrewMaster\BrewApp.API\obj\Debug\netcoreapp2.1\BrewApp.API.pdb
