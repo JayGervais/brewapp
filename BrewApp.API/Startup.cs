@@ -36,6 +36,8 @@ namespace BrewApp.API
             ));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            // for angular api
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +53,9 @@ namespace BrewApp.API
             }
 
             //app.UseHttpsRedirection();
+            
+            // for angular
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseMvc();
         }
     }
