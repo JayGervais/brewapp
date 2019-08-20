@@ -12,6 +12,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
 
 namespace BrewApp.API
 {
@@ -27,18 +30,31 @@ namespace BrewApp.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContextPool<DataContext>( 
-                options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection") // replace with your Connection String
-                    // mySqlOptions =>
-                    // {
-                    //     mySqlOptions.ServerVersion(ServerType.MySql); // replace with your Server Version and Type
-                    // }
+            services.AddDbContextPool<DataContext>(
+                options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection") 
+                // replace with your Connection String
+                // mySqlOptions =>
+                // {
+                //     mySqlOptions.ServerVersion(ServerType.MySql); // replace with your Server Version and Type
+                // }
             ));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             // for angular api
             services.AddCors();
             services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII
+                        .GetBytes(Configuration.GetSection("AppSettings:Token").Value)),
+                        ValidateIssuer = false,
+                        ValidateAudience = false
+                    };
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,9 +70,10 @@ namespace BrewApp.API
             }
 
             //app.UseHttpsRedirection();
-            
+
             // for angular
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            app.UseAuthentication();
             app.UseMvc();
         }
     }

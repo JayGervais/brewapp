@@ -6,10 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using BrewApp.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BrewApp.API.Controllers
 {
     // GET api/values
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
@@ -28,6 +30,7 @@ namespace BrewApp.API.Controllers
         }
 
         // GET api/values/5
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetValue(int id)
         {
