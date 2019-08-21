@@ -5,6 +5,9 @@ namespace BrewApp.API.Dtos
     public class UserForRegisterDto
     {
         [Required]
+        public string Username { get; set; }
+
+        [Required]
         public string Email { get; set; }
 
         [Required]

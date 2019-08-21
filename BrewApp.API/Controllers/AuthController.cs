@@ -36,7 +36,8 @@ namespace BrewApp.API.Controllers
 
             var userToCreate = new User
             {
-                Email = userForRegisterDto.Email
+                Email = userForRegisterDto.Email,
+                Username = userForRegisterDto.Username
             };
 
             var createdUser = await _repo.Register(userToCreate, userForRegisterDto.Password);
@@ -57,7 +58,8 @@ namespace BrewApp.API.Controllers
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, userFromRepo.User_Id.ToString()),
-                new Claim(ClaimTypes.Email, userFromRepo.Email)
+                new Claim(ClaimTypes.Email, userFromRepo.Email),
+                new Claim(ClaimTypes.Name, userFromRepo.Username)
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8
