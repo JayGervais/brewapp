@@ -19,6 +19,7 @@ using System.Net;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using BrewApp.API.helpers;
+using AutoMapper;
 
 namespace BrewApp.API
 {
@@ -43,11 +44,17 @@ namespace BrewApp.API
                 // }
             ));
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            // for angular api
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                // reference loop error handling
+                .AddJsonOptions(opt => {
+                    opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                });
+            // for angular api    
             services.AddCors();
+            services.AddAutoMapper(typeof(Startup));
             services.AddTransient<Seed>();
             services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<IBrewRepository, BrewingRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
