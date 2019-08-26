@@ -13,12 +13,8 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gal
 export class MemberDetailComponent implements OnInit {
   user: User;
 
-
-
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
-
-
 
   constructor(private userService: UserService, private alertify: AlertifyService, private route: ActivatedRoute) { }
 
@@ -27,12 +23,10 @@ export class MemberDetailComponent implements OnInit {
       this.user = data.user;
     });
 
-
-
     this.galleryOptions = [
       {
-        width: '500px',
-        height: '500px',
+        width: '100%',
+        height: '750px',
         imagePercent: 100,
         thumbnailsColumns: 4,
         imageAnimation: NgxGalleryAnimation.Slide,
@@ -41,10 +35,7 @@ export class MemberDetailComponent implements OnInit {
     ];
     this.galleryImages = this.getImages();
 
-
-
   }
-
 
   getImages() {
     const imageUrls = [];
@@ -59,6 +50,5 @@ export class MemberDetailComponent implements OnInit {
     }
     return imageUrls;
   }
-
 
 }
