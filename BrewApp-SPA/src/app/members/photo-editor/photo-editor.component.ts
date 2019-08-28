@@ -4,8 +4,8 @@ import { Photo } from 'src/app/_models/photo';
 import { AlertifyService } from 'src/app/_services/alertify.service';
 import { AuthService } from 'src/app/_services/auth.service';
 import { UserService } from 'src/app/_services/user.service';
-// import { environment } from 'src/environments/environment';
-import { environment } from '../../../environments/environment';
+import { environment } from 'src/environments/environment';
+// import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-photo-editor',
@@ -41,7 +41,7 @@ export class PhotoEditorComponent implements OnInit {
       maxFileSize: 10 * 1024 * 1024
     });
 
-    // this.uploader.onAfterAddingFile = (file) => { file.withCredentials = false; };
+    this.uploader.onAfterAddingFile = (file) => { file.withCredentials = false; };
 
     this.uploader.onSuccessItem = (item, response, status, headers) => {
       if (response) {
