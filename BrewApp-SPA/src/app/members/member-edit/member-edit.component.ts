@@ -17,9 +17,9 @@ export class MemberEditComponent implements OnInit {
 
   // desired action: prevent closing window during edit (not working - shows blank screen)
   @HostListener('window:beforeunload', ['$event'])
-  unloadNotification() {
+  unloadNotification($event: any) {
     if (this.editForm.dirty) {
-      return false;
+      $event.returnValue = true;
     }
   }
 
@@ -39,6 +39,10 @@ export class MemberEditComponent implements OnInit {
     }, error => {
       this.alertify.error(error);
     });
+  }
+
+  updateMainPhoto(photoUrl) {
+    this.user.photoUrl = photoUrl;
   }
 
 }
