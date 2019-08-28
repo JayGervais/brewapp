@@ -34,3 +34,11 @@
 .animate {
     transition: all 0.3s ease-in-out;
 }
+
+.card-name {
+    font-size: 225%;
+}
+
+.p-1 {
+    padding: 1.25rem!important;
+}

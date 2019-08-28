@@ -1,6 +1,8 @@
 <div class="card mb-5">
   <div class="card-img-wrapper">
+    <a href="/members/{{user?.user_Id}}">
     <img class="card-img-top" src="{{user.photoUrl}}" alt="{{user.username}}">
+    </a>
     <ul class="list-inline member-icons animate text-center">
       <li class="list-inline-item"><button class="btn btn-primary" [routerLink]="['/members/', user.user_Id]"><i class="fa fa-user"></i></button></li>
       <li class="list-inline-item"><button class="btn btn-primary"><i class="fa fa-heart"></i></button></li>
@@ -8,7 +10,9 @@
     </ul>
   </div>
   <div class="card-body p-1">
-    <h6 class="card-title bt-1"><i class="fa fa-user"></i> {{user.username}}</h6>
+    <a href="/members/{{user?.user_Id}}">
+      <h6 class="card-title bt-1 card-name"> {{user.username}}</h6>
+    </a>
     <p class="card-text text-muted">{{user.city}}, {{user.prov}}</p>
   </div>
 </div>

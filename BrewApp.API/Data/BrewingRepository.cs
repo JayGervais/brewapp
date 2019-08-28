@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using BrewApp.API.Models;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,11 @@ namespace BrewApp.API.Data
         public void Delete<T>(T entity) where T : class
         {
             _context.Remove(entity);
+        }
+
+        public async Task<Photo> GetMainPhotoForUser(int user_Id)
+        {
+            return await _context.Photos.Where(u => u.User_Id == user_Id).FirstOrDefaultAsync(p => p.IsMain);
         }
 
         public async Task<Photo> GetPhoto(int id)

@@ -51,7 +51,7 @@ namespace BrewApp.API
                 });
             // for angular api    
             services.AddCors();
-            services.Configure<CloudinarySettings>(Configuration.GetSection("CloundinarySettings"));
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             services.AddAutoMapper(typeof(Startup));
             services.AddTransient<Seed>();
             services.AddScoped<IAuthRepository, AuthRepository>();
