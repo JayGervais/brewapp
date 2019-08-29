@@ -24,8 +24,14 @@ import { User } from '../_models/user';
     return this.http.put(this.baseUrl + 'users/' + id, user);
   }
 
+  // tslint:disable-next-line: variable-name
   setMainPhoto(user_Id: number, id: number) {
     return this.http.post(this.baseUrl + 'users/' + user_Id + '/photos/' + id + '/setMain', {});
+  }
+
+  // tslint:disable-next-line: variable-name
+  deletePhoto(user_Id: number, id: number) {
+    return this.http.delete(this.baseUrl + 'users/' + user_Id + '/photos/' + id);
   }
 
 }
