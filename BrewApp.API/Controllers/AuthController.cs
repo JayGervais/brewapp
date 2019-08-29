@@ -31,33 +31,24 @@ namespace BrewApp.API.Controllers
         public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
         {
             userForRegisterDto.Email = userForRegisterDto.Email.ToLower();
-
             if (await _repo.UserExists(userForRegisterDto.Email))
             {
                 return BadRequest("User already exists");
             }
-
-            var userToCreate = new User
-            {
-                Email = userForRegisterDto.Email,
-                Username = userForRegisterDto.Username
-            };
-
+            var userToCreate = _mapper.Map<User>(userForRegisterDto);
             var createdUser = await _repo.Register(userToCreate, userForRegisterDto.Password);
-
-            return StatusCode(201);
+            var userToReturn = _mapper.Map<UserForDetailedDto>(createdUser);
+            return CreatedAtRoute("GetUser", new {controller = "Users", id = createdUser.User_Id}, userToReturn);
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
             var userFromRepo = await _repo.Login(userForLoginDto.Email.ToLower(), userForLoginDto.Password);
-
             if (userFromRepo == null)
             {
                 return Unauthorized();
             }
-
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, userFromRepo.User_Id.ToString()),
