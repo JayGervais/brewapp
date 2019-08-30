@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master-broken\\BrewApp.API\\BrewApp.API.csproj": {}
+    "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master\\BrewApp.API\\BrewApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master-broken\\BrewApp.API\\BrewApp.API.csproj": {
+    "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master\\BrewApp.API\\BrewApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master-broken\\BrewApp.API\\BrewApp.API.csproj",
+        "projectUniqueName": "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master\\BrewApp.API\\BrewApp.API.csproj",
         "projectName": "BrewApp.API",
-        "projectPath": "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master-broken\\BrewApp.API\\BrewApp.API.csproj",
+        "projectPath": "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master\\BrewApp.API\\BrewApp.API.csproj",
         "packagesPath": "C:\\Users\\650028\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master-broken\\BrewApp.API\\obj\\",
+        "outputPath": "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master\\BrewApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master-broken\\BrewApp.API\\NuGet.Config",
+          "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master\\BrewApp.API\\NuGet.Config",
           "C:\\Users\\650028\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"

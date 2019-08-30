@@ -15,6 +15,7 @@ namespace BrewApp.API.Dtos
         public string Prov { get; set; }
         public string Country { get; set; }
         public string Description { get; set; }
+        public DateTime LastActive { get; set; }
         public DateTime Created { get; set; }
         public string PhotoUrl { get; set; }
         public ICollection<PhotosForDetailsDto> Photos { get; set; }

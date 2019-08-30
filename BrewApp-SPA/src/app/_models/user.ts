@@ -10,8 +10,8 @@ export interface User {
     prov: string;
     country: string;
     description?: string;
+    lastActive: Date;
     created: Date;
-   // lastActive: Date;
     photoUrl: string;
     photos?: Photo[];
 }
