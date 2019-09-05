@@ -9,7 +9,7 @@ namespace BrewApp.API.helpers
 {
     public class LogUserActivity : IAsyncActionFilter
     {
-        // action filter to log last active (not configured)
+        // action filter to log last active
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
             var resultContext = await next();
