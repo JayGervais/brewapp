@@ -2,6 +2,7 @@ using System;
 
 namespace BrewApp.API.Dtos
 {
+    // primary details used for images on user profile
     public class PhotosForDetailsDto
     {
         public int Id { get; set; }

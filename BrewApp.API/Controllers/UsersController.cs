@@ -8,7 +8,7 @@ using BrewApp.API.Dtos;
 using BrewApp.API.helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
+// user controller
 namespace BrewApp.API.Controllers
 {
     [ServiceFilter(typeof(LogUserActivity))]
@@ -17,6 +17,7 @@ namespace BrewApp.API.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
+        // set up repo and mapper references
         private readonly IBrewRepository _repo;
         private readonly IMapper _mapper;
 
@@ -26,11 +27,13 @@ namespace BrewApp.API.Controllers
             _repo = repo;
         }
 
+        // get users from repo and map from dto
         [HttpGet]
         public async Task<IActionResult> GetUsers([FromQuery]UserParams userParams)
         {
             var users = await _repo.GetUsers(userParams);
             var usersToReturn = _mapper.Map<IEnumerable<UserForListDto>>(users);
+            // add pagination
             Response.AddPagination(users.CurrentPage, users.PageSize, users.TotalCount, users.TotalPages);
             return Ok(usersToReturn);
         }

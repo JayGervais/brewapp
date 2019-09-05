@@ -5,6 +5,7 @@ using BrewApp.API.Models;
 
 namespace BrewApp.API.Data
 {
+    // interface for basic user settings
     public interface IBrewRepository 
     {
          void Add<T>(T entity) where T: class;

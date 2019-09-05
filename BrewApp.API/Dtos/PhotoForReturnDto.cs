@@ -2,6 +2,7 @@ using System;
 
 namespace BrewApp.API.Dtos
 {
+    // dto specifying data to return after image creation for API
     public class PhotoForReturnDto
     {
         public int Id { get; set; }

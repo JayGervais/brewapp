@@ -1,5 +1,5 @@
 using System;
-
+// constructor for profile photos
 namespace BrewApp.API.Models
 {
     public class Photo

@@ -35,13 +35,9 @@ namespace BrewApp.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // set up mysql database connection
             services.AddDbContextPool<DataContext>(
                 options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection") 
-                // replace with your Connection String
-                // mySqlOptions =>
-                // {
-                //     mySqlOptions.ServerVersion(ServerType.MySql); // replace with your Server Version and Type
-                // }
             ));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
@@ -51,11 +47,14 @@ namespace BrewApp.API
                 });
             // for angular api    
             services.AddCors();
+            // import cloudinary settings
             services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
+            // auto mapper services
             services.AddAutoMapper(typeof(Startup));
             services.AddTransient<Seed>();
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IBrewRepository, BrewingRepository>();
+            // add JWT authentication
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -80,6 +79,7 @@ namespace BrewApp.API
             }
             else
             {
+                // exception handler for dev mode
                 app.UseExceptionHandler(builder => {
                     builder.Run(async context => {
                         context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;

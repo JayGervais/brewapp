@@ -2,6 +2,7 @@ using System;
 
 namespace BrewApp.API.Dtos
 {
+    // details for displaying on user list page
     public class UserForListDto
     {
         public int User_Id { get; set; }

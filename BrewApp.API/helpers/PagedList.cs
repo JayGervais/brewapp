@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-
+// pagination helper class
 namespace BrewApp.API.helpers
 {
+    // create list of pages
     public class PagedList<T> : List<T>
     {
         public int CurrentPage { get; set; }
@@ -22,6 +23,7 @@ namespace BrewApp.API.helpers
             this.AddRange(items);
         }
 
+        // async method to generate page list
         public static async Task<PagedList<T>> CreateAsync(IQueryable<T> source, int pageNumber, int pageSize)
         {
             var count = await source.CountAsync();

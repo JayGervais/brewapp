@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BrewApp.API.Data
 {
+    // class to extend functionality of auth repository with registration and login
     public class AuthRepository : IAuthRepository
     {
         private readonly DataContext _context;

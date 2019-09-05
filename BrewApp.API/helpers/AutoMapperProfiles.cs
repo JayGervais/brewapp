@@ -7,6 +7,7 @@ namespace BrewApp.API.helpers
 {
     public class AutoMapperProfiles : Profile
     {
+        // using auto mapper to link API to profile parameters
         public AutoMapperProfiles()
         {
             CreateMap<User, UserForListDto>()

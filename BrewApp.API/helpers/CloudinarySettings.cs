@@ -1,5 +1,6 @@
 namespace BrewApp.API.helpers
 {
+    // basic cloudinary setup constructor
     public class CloudinarySettings
     {
         public string CloudName { get; set; }

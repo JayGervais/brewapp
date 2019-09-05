@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 
 namespace BrewApp.API.Data
 {
+    // class created for seeding data into database for testing
     public class Seed
     {
         private readonly DataContext _context;

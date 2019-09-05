@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BrewApp.API.Dtos
 {
+    // parameters for user registration
     public class UserForRegisterDto
     {
         [Required]

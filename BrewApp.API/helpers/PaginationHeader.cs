@@ -1,3 +1,4 @@
+// pagination header constructor used for page values in pagination
 namespace BrewApp.API.helpers
 {
     public class PaginationHeader

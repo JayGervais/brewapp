@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace BrewApp.API.Data
 {
+    // data context assists with binding user data
     public class DataContext : DbContext
     {
         public DataContext(DbContextOptions<DataContext> options) : base (options){}

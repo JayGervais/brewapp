@@ -1,5 +1,6 @@
 namespace BrewApp.API.Dtos
 {
+    // dto for user to update
     public class UserForUpdateDto
     {
         public string Description { get; set; }

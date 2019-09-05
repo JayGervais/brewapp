@@ -4,6 +4,7 @@ using BrewApp.API.Models;
 
 namespace BrewApp.API.Dtos
 {
+    // user details for user object
     public class UserForDetailedDto
     {
         public int User_Id { get; set; }

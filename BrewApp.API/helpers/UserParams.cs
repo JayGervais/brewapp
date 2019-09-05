@@ -1,3 +1,4 @@
+// user parameters used for pagination of users page
 namespace BrewApp.API.helpers
 {
     public class UserParams

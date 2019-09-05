@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace BrewApp.API.Dtos
 {
+    // dto for generating new photo objects in db
     public class PhotoForCreationDto
     {
         public string Url { get; set; }
