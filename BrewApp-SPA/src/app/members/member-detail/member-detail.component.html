@@ -1,4 +1,4 @@
-<div class="container mt-4"> 
+<div class="container mt-4 pb-5"> 
   <div class="row">
     <!-- <h1>{{user.username}}'s Profile</h1> -->
   </div>
@@ -8,7 +8,8 @@
           <img class="card-img-top img-thumbnail" src="{{user.photoUrl || '../../../assets/user.png'}}" alt="{{user?.username}}"> 
         <div class="card-body">
           <div>
-              <h1>{{user.username}}</h1>
+              <h2 class="fancytext pt-3">{{user.username}}</h2>
+              <hr>
           </div>
           <div>
             <strong>Location:</strong>
@@ -43,7 +44,9 @@
             <p>{{user.description}}</p>
           </tab> -->
           <tab heading="Photos">
-            <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+            <div class="profileimgs">
+              <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+            </div>    
           </tab>
           <tab heading="Messages">
             <h4>Messages</h4>
