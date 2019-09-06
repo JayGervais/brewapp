@@ -1,33 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master\\BrewApp.API\\BrewApp.API.csproj": {}
+    "/Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/BrewApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master\\BrewApp.API\\BrewApp.API.csproj": {
+    "/Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/BrewApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master\\BrewApp.API\\BrewApp.API.csproj",
+        "projectUniqueName": "/Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/BrewApp.API.csproj",
         "projectName": "BrewApp.API",
-        "projectPath": "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master\\BrewApp.API\\BrewApp.API.csproj",
-        "packagesPath": "C:\\Users\\650028\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master\\BrewApp.API\\obj\\",
+        "projectPath": "/Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/BrewApp.API.csproj",
+        "packagesPath": "/Users/jaygervais/.nuget/packages/",
+        "outputPath": "/Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\650028\\Desktop\\JaysAngularASPApp\\brewapp-master\\BrewApp.API\\NuGet.Config",
-          "C:\\Users\\650028\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/NuGet.Config",
+          "/Users/jaygervais/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://www.myget.org/F/pomelo/api/v3/index.json": {}
         },
@@ -137,6 +133,7 @@
               "version": "[2.2.0, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true

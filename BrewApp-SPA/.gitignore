@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 
 # other
-../BrewApp.API/appsettings.json
+./brewapp-master/BrewApp.API/appsettings.json
