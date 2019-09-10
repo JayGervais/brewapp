@@ -15,5 +15,6 @@ namespace BrewApp.API.Data
          Task<User> GetUser(int id);
          Task<Photo> GetPhoto(int id);
          Task<Photo> GetMainPhotoForUser(int user_Id);
+         Task<Like> GetLike(int user_Id, int recipientId);
     }
 }

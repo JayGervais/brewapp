@@ -22,5 +22,7 @@ namespace BrewApp.API.Models
         public DateTime Created { get; set; }
         public DateTime LastActive { get; set; }
         public ICollection<Photo> Photos { get; set; }
+        public ICollection<Like> Likers { get; set; }
+        public ICollection<Like> Likees { get; set; }
     }
 }

@@ -29,6 +29,11 @@ namespace BrewApp.API.Data
             _context.Remove(entity);
         }
 
+        public async Task<Like> GetLike(int user_Id, int recipientId)
+        {
+            return await _context.Likes.FirstOrDefaultAsync(u => u.LikerId == user_Id && u.LikeeId == recipientId);
+        }
+
         // generate main photo context for user
         public async Task<Photo> GetMainPhotoForUser(int user_Id)
         {

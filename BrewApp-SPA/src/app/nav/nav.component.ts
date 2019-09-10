@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
 import { AlertifyService } from '../_services/alertify.service';
 import { Router } from '@angular/router';
+import { User } from '../_models/user';
+import { UserService } from '../_services/user.service';
 
 @Component({
   selector: 'app-nav',
@@ -12,6 +14,8 @@ export class NavComponent implements OnInit {
   // stores username/pass
   model: any = {};
   photoUrl: string;
+  // added for nav link
+  user: User;
 
   constructor(public authService: AuthService, private alertify: AlertifyService, private router: Router) {}
 
