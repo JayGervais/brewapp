@@ -82,3 +82,17 @@ C:/Users/650028/Desktop/JaysAngularASPApp/brewapp-master-broken/BrewApp.API/obj/
 /Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/obj/Debug/netcoreapp2.1/BrewApp.API.RazorTargetAssemblyInfo.cache
 /Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/obj/Debug/netcoreapp2.1/BrewApp.API.dll
 /Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/obj/Debug/netcoreapp2.1/BrewApp.API.pdb
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/bin/Debug/netcoreapp2.1/BrewApp.API.deps.json
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/bin/Debug/netcoreapp2.1/BrewApp.API.runtimeconfig.json
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/bin/Debug/netcoreapp2.1/BrewApp.API.runtimeconfig.dev.json
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/bin/Debug/netcoreapp2.1/BrewApp.API.dll
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/bin/Debug/netcoreapp2.1/BrewApp.API.pdb
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/obj/Debug/netcoreapp2.1/BrewApp.API.csprojAssemblyReference.cache
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/obj/Debug/netcoreapp2.1/BrewApp.API.csproj.CoreCompileInputs.cache
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/obj/Debug/netcoreapp2.1/BrewApp.API.RazorAssemblyInfo.cache
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/obj/Debug/netcoreapp2.1/BrewApp.API.RazorAssemblyInfo.cs
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/obj/Debug/netcoreapp2.1/BrewApp.API.AssemblyInfoInputs.cache
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/obj/Debug/netcoreapp2.1/BrewApp.API.AssemblyInfo.cs
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/obj/Debug/netcoreapp2.1/BrewApp.API.RazorTargetAssemblyInfo.cache
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/obj/Debug/netcoreapp2.1/BrewApp.API.dll
+/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/obj/Debug/netcoreapp2.1/BrewApp.API.pdb

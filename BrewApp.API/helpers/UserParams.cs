@@ -10,7 +10,11 @@ namespace BrewApp.API.helpers
         {
             get { return pageSize; }
             set { pageSize = (value > MAX_PAGE_SIZE) ? MAX_PAGE_SIZE : value; }
-        }
+        } 
         
+        public int User_Id { get; set; }
+        public bool Likees { get; set; } = false;
+        public bool Likers { get; set; } = false;
+
     }
 }

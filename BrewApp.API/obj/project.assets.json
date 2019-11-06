@@ -12080,17 +12080,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/BrewApp.API.csproj",
+      "projectUniqueName": "/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/BrewApp.API.csproj",
       "projectName": "BrewApp.API",
-      "projectPath": "/Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/BrewApp.API.csproj",
+      "projectPath": "/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/BrewApp.API.csproj",
       "packagesPath": "/Users/jaygervais/.nuget/packages/",
-      "outputPath": "/Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/obj/",
+      "outputPath": "/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/jaygervais/Desktop/BrewApp/brewapp-master/BrewApp.API/NuGet.Config",
+        "/Users/jaygervais/Documents/BrewApp/brewapp-master/BrewApp.API/NuGet.Config",
         "/Users/jaygervais/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
